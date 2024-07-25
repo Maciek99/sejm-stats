@@ -13,7 +13,7 @@ async function InterpellationsTable() {
   ];
   return (
     <>
-      <DataTable columns={columns} data={interpellations} filters={filters} />;
+      <DataTable columns={columns} data={interpellations} filters={filters} />
     </>
   );
 }
