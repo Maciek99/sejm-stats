@@ -99,7 +99,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   ];
 
   return (
-    <html lang="en" className="h-full bg-neutral-50">
+    <html lang="en" className="h-full">
       <body className="h-min-screen">
         <ThemeProvider
           attribute="class"
