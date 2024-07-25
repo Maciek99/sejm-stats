@@ -32,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItems, isOpen, onClose }) => {
       {/* Sidebar */}
       <div
         className={`
-          fixed inset-y-0 left-0 z-30 w-64 bg-gray-800 text-gray-100 p-4
+          fixed inset-y-0 left-0 z-30 w-64 bg-card text-foreground p-4 border-r
           transform transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:translate-x-0 md:static
@@ -45,7 +45,7 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItems, isOpen, onClose }) => {
           </Link>
           <button
             onClick={onClose}
-            className="md:hidden text-gray-300 hover:text-white"
+            className="md:hidden text-secondary-foreground hover:text-foreground"
             aria-label="Close sidebar"
           >
             <FaTimes size={24} />
@@ -58,8 +58,8 @@ const Sidebar: React.FC<SidebarProps> = ({ menuItems, isOpen, onClose }) => {
               href={item.href}
               className={`flex items-center space-x-2 py-2.5 px-4 rounded transition duration-200 ${
                 pathname === item.href
-                  ? "bg-blue-500 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                  ? "bg-blue-500 text-foreground"
+                  : "text-secondary-foreground hover:bg-secondary hover:text-foreground"
               }`}
               onClick={() => {
                 if (window.innerWidth < 768) {
