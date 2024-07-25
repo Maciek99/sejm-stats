@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Club } from "@/lib/api";
+import { Club } from "@/lib/types";
 
 interface ClubsListProps {
   clubs: Club[];
@@ -22,7 +22,7 @@ const ClubsList: React.FC<ClubsListProps> = ({ clubs }) => {
               }%, transparent ${(club.membersCount / 460) * 100}%)`,
             }}
           >
-            <span className="bg-white rounded p-1 mr-4">
+            <span className="bg-card rounded p-1 mr-4">
               {club.photo_url && (
                 <Image
                   src={`/..${club.photo_url}`}
