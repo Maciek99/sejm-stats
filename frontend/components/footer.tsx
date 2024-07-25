@@ -13,7 +13,7 @@ type FooterProps = {
 
 const Footer: React.FC<FooterProps> = ({ links }) => {
   return (
-    <footer className="bg-white border-t-1 rounded-t  py-4">
+    <footer className="bg-background border-t-1 rounded-t  py-4">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <div className="flex items-center">
           <Image
@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ links }) => {
             height={24}
             className="mr-2"
           />
-          <span className="text-sm text-neutral-700 pe-2">
+          <span className="text-sm text-secondary-foreground pe-2">
             © 2024 Michał Skibiński. Wszelkie prawa zastrzeżone.
           </span>
         </div>
@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ links }) => {
             <Link
               key={index}
               href={link.href}
-              className="text-gray-300 hover:text-white sm:px-1 md:px-2"
+              className="text-secondary-foreground hover:text-foreground sm:px-1 md:px-2"
             >
               {link.icon}
             </Link>
