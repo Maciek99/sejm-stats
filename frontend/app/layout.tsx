@@ -144,7 +144,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 </button>
               </Navbar>
 
-              <main className="min-h-[85vh]   bg-neutral-100">
+              <main className="min-h-[85vh]   bg-background">
                 <Breadcrumbs />
                 {children}
               </main>
