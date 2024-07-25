@@ -22,8 +22,6 @@ async function HomeContainer() {
 
 export default function Page() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
       <HomeContainer />
-    </Suspense>
   );
 }
